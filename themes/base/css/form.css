@@ -1,0 +1,326 @@
+/** ----------------------------------------------------------
+ *
+ * This stylesheet includes both generic form styles and 
+ *    additional form styles for the User Defined Form Module.
+ *
+ ** ------------------------------------------------------- */
+/* GENERIC FORMS
+----------------------------------------------- */
+/* line 12, ../scss/form.scss */
+form {
+  max-width: 500px;
+  width: 50%; }
+
+/* line 16, ../scss/form.scss */
+div.field {
+  margin: 10px 0 15px; }
+
+/* line 19, ../scss/form.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 24, ../scss/form.scss */
+form label {
+  margin-bottom: 5px; }
+
+/* line 27, ../scss/form.scss */
+form label.left {
+  display: block;
+  font-weight: bold; }
+
+/* line 31, ../scss/form.scss */
+form label.right {
+  font-size: 12px;
+  color: #888; }
+
+/* line 39, ../scss/form.scss */
+form input.text,
+form textarea,
+form .textajaxuniquetext,
+form select {
+  width: 100%;
+  max-width: 400px;
+  padding: 6px 5px;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #dad9d9; }
+
+/* line 47, ../scss/form.scss */
+.ie7 form select {
+  width: 400px; }
+
+/* fix for ie7's rendering of max-width property on select input */
+/* line 52, ../scss/form.scss */
+form input.text:focus,
+form textarea:focus,
+form .textajaxuniquetext:focus,
+form select:focus {
+  outline: none; }
+
+/* line 55, ../scss/form.scss */
+form input[disabled], form textarea[disabled] {
+  background-color: #f7f7f7;
+  border: 1px solid #dad9d9; }
+
+/* line 59, ../scss/form.scss */
+textarea {
+  resize: vertical;
+  /* forces text area to be resized vertically only */ }
+
+/* Radio and Checkbox */
+/* line 65, ../scss/form.scss */
+.field .checkbox, .field .radio {
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+  margin-top: 3px;
+  padding: 0; }
+
+/* line 74, ../scss/form.scss */
+.checkbox label.right,
+.radio label.right {
+  float: left; }
+
+/* Messages */
+/* line 80, ../scss/form.scss */
+form .message {
+  background-color: #fef4ba;
+  padding: 5px 10px;
+  border: 1px solid #e8c805;
+  border-radius: 3px; }
+
+/* line 86, ../scss/form.scss */
+form .good {
+  background-color: #ecf9d0;
+  border-color: #8fbe00; }
+
+/* line 90, ../scss/form.scss */
+form .bad, form .required {
+  background-color: #f9d0d0;
+  border-color: #cf0000;
+  color: #b80000; }
+
+/* ACTIONS */
+/* line 98, ../scss/form.scss */
+.Actions {
+  margin-bottom: 20px; }
+
+/* line 101, ../scss/form.scss */
+a.btn, button, input[type="submit"], .Actions .action {
+  background: #b80000;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  font-size: 13px;
+  margin-right: 10px;
+  float: left; }
+
+/* line 116, ../scss/form.scss */
+a.btn:hover, button, input[type="submit"]:hover, .Actions .action:hover {
+  background: #C80000;
+  color: #fff; }
+
+/* line 120, ../scss/form.scss */
+a.btn {
+  line-height: 18px;
+  margin-bottom: 10px; }
+
+/* line 124, ../scss/form.scss */
+a.btn:after {
+  /* creates arrow in button */
+  content: '\2192';
+  padding-left: 10px; }
+
+/* line 128, ../scss/form.scss */
+.ie7 input.action {
+  width: 0;
+  /* IE table-cell margin fix */
+  overflow: visible; }
+
+/* line 132, ../scss/form.scss */
+input.action[class] {
+  /* IE ignores [class] */
+  width: auto;
+  /* cancel margin fix for other browsers */ }
+
+/* line 136, ../scss/form.scss */
+.ie7 .Actions .action {
+  float: left; }
+
+/* line 139, ../scss/form.scss */
+.Actions:after {
+  color: #B94A48;
+  display: inline-block;
+  font-weight: normal;
+  margin-top: 9px; }
+
+/* line 145, ../scss/form.scss */
+#MemberLoginForm_LoginForm .Actions:after {
+  display: none; }
+
+/* AREA SPECIFIC */
+/* LOGIN and FORGOT PASSWORD */
+/* line 152, ../scss/form.scss */
+#Remember {
+  min-height: 20px; }
+
+/* line 155, ../scss/form.scss */
+#ForgotPassword {
+  clear: left; }
+
+/* line 158, ../scss/form.scss */
+#MemberLoginForm_LostPasswordForm .Actions:after {
+  display: none; }
+
+/* Search / Login */
+/* line 163, ../scss/form.scss */
+.header form .middleColumn {
+  /* float: none;
+  width: 100% !important; */ }
+
+/* USER DEFINED USER FORM MODULE STYLES
+----------------------------------------------- */
+/*Generic and mixed*/
+/* line 175, ../scss/form.scss */
+.FormHeading {
+  clear: both;
+  padding-top: 15px; }
+
+/* line 179, ../scss/form.scss */
+form .date .middleColumn input {
+  /*background: transparent url(../images/icons/your_icon_here.png) no-repeat scroll 90px 5px;*/
+  width: 114px; }
+
+/* line 184, ../scss/form.scss */
+.Actions input.resetformaction,
+.Actions input.action-minor {
+  /* Clear button */
+  float: left;
+  background-color: #888; }
+
+/* line 189, ../scss/form.scss */
+.Actions input.resetformaction:hover,
+.Actions input.action-minor:hover {
+  /* Clear button */
+  background-color: #aaa; }
+
+/* Labels */
+/* line 194, ../scss/form.scss */
+.checkbox label.right {
+  font-size: 13px;
+  /* reset to default */
+  color: #333;
+  /* reset to default */ }
+
+/* line 198, ../scss/form.scss */
+form .requiredField label.left:after {
+  /* pseudo element adds an asterisk to a required fields label */
+  color: #B94A48;
+  content: "*";
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 3px; }
+
+/* Radio / Checkbox */
+/* line 208, ../scss/form.scss */
+form .checkboxset ul,
+form .optionset ul {
+  margin: 0; }
+
+/* line 212, ../scss/form.scss */
+form .checkboxset li,
+form .optionset li {
+  margin-bottom: 5px;
+  list-style-type: none; }
+
+/* line 216, ../scss/form.scss */
+form div.checkbox:after {
+  /* clearfix */
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/* line 223, ../scss/form.scss */
+form .checkbox .checkbox {
+  clear: both; }
+
+/* Messages */
+/* line 226, ../scss/form.scss */
+span.message {
+  margin: 10px 0;
+  display: block;
+  max-width: 390px;
+  clear: left; }
+
+/* line 232, ../scss/form.scss */
+div.holder-required {
+  /* This class needs to be changed - is used for both input and div */
+  /* background-color: #f9d0d0;
+  border: 1px solid #cf0000;
+  padding: 10px;
+  margin-left: -11px; */ }
+
+/* line 238, ../scss/form.scss */
+form input.holder-required {
+  /* This class needs to be changed - is used for both input and div */
+  border: 1px solid #cf0000; }
+
+/* Error messages */
+/* line 244, ../scss/form.scss */
+input:invalid,
+textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red; }
+
+/* line 251, ../scss/form.scss */
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd; }
+
+/* To test - potentially not needed? */
+/* line 256, ../scss/form.scss */
+.ss-uploadfield-item-info button {
+  margin-top: 4px !important;
+  float: left; }
+
+/* line 262, ../scss/form.scss */
+form .creditCardField input,
+form input.currency,
+form input.numeric {
+  width: 50px; }
+
+/* line 266, ../scss/form.scss */
+form #DMYDate-month,
+form #DMYDate-day {
+  width: 25px; }
+
+/* Responsive form styles
+----------------------------------------------- */
+@media only screen and (max-width: 700px) {
+  /* To test - potentially not needed? */
+  /* line 279, ../scss/form.scss */
+  .header form .middleColumn {
+    float: none;
+    width: 100% !important; }
+
+  /* line 284, ../scss/form.scss */
+  form label.left,
+  #MemberLoginForm_LoginForm label {
+    margin-bottom: 8px; } }
+@media only screen and (max-width: 900px) {
+  /* line 290, ../scss/form.scss */
+  form {
+    max-width: 100%; } }

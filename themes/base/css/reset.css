@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* This reset is loosely derived from HTML5 boilerplate 
+for more information visit http://html5boilerplate.com/ */
+/* Every browser has its own default ‘user agent’ stylesheet, that it uses to make unstyled websites appear more legible.
+Using a CSS Reset, CSS authors can force every browser to have all its styles reset to null, thus avoiding cross-browser differences as much as possible.
+From the consistent base that you’ve set up via your reset, you can then go on to re-style your document,
+safe in the knowledge that the browsers’ differences in their default rendering of HTML can’t touch you! */
+/* line 17, ../scss/reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 19, ../scss/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 21, ../scss/reset.scss */
+html {
+  overflow-y: scroll; }
+
+/* line 22, ../scss/reset.scss */
+body {
+  -webkit-text-size-adjust: none; }
+
+/* line 24, ../scss/reset.scss */
+.clear:before, .clear:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+/* line 25, ../scss/reset.scss */
+.clear:after {
+  clear: both; }
+
+/* line 26, ../scss/reset.scss */
+.clear {
+  zoom: 1; }
+
+/* line 28, ../scss/reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+/* line 29, ../scss/reset.scss */
+sup {
+  top: -0.5em; }
+
+/* line 30, ../scss/reset.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 32, ../scss/reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px; }
+
+/* line 33, ../scss/reset.scss */
+textarea {
+  overflow: auto; }
+
+/* line 34, ../scss/reset.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px; }
+
+/* line 35, ../scss/reset.scss */
+input[type="radio"], input.radio {
+  vertical-align: text-bottom; }
+
+/* line 36, ../scss/reset.scss */
+input[type="checkbox"], input.checkbox, .checkboxes input {
+  vertical-align: bottom; }
+
+/* line 37, ../scss/reset.scss */
+.ie7 input[type="checkbox"], .ie7 input.checkbox, .ie7 .checkboxes input {
+  vertical-align: baseline; }
+
+/* line 38, ../scss/reset.scss */
+.ie6 input {
+  vertical-align: text-bottom; }
+
+/* line 39, ../scss/reset.scss */
+label, input[type="button"], input[type="submit"], input[type="image"], button, .btn {
+  cursor: pointer; }
+
+/* line 40, ../scss/reset.scss */
+button, input, select, textarea {
+  margin: 0; }
+
+/* .checkbox, .radio {float:left; width:13px; height:13px; margin-right:6px; padding:0;} */
+/* line 43, ../scss/reset.scss */
+button {
+  width: auto;
+  overflow: visible; }
+
+/* line 44, ../scss/reset.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* line 46, ../scss/reset.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+/* line 47, ../scss/reset.scss */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* line 48, ../scss/reset.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 50, ../scss/reset.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* line 51, ../scss/reset.scss */
+.invisible {
+  visibility: hidden; }
+
+/* line 53, ../scss/reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 54, ../scss/reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 55, ../scss/reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* line 56, ../scss/reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 57, ../scss/reset.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 58, ../scss/reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/* line 59, ../scss/reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 60, ../scss/reset.scss */
+input, select {
+  vertical-align: middle; }
+
+/* line 62, ../scss/reset.scss */
+a:hover, a:active {
+  outline: none; }
+
+/* line 63, ../scss/reset.scss */
+.content ul, .content ol {
+  margin-left: 2em; }
+
+/* line 64, ../scss/reset.scss */
+ol {
+  list-style-type: decimal; }
+
+/* line 65, ../scss/reset.scss */
+ul li {
+  list-style-type: none; }
+
+/* line 66, ../scss/reset.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none; }
+
+/* line 67, ../scss/reset.scss */
+strong, b, th {
+  font-weight: bold; }
